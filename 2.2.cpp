@@ -4,7 +4,13 @@ using namespace std;
 int main(){
     int n, k;
     cin>>n>>k;
+
+    if(k <= 0 || n <= 0 || k > n) {
+        return 0; 
+    }
+
     int x[k];
+
 
     for(int i = 0; i < k; i++) {
         x[i] = i + 1;
