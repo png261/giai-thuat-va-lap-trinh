@@ -17,8 +17,10 @@ int main() {
     }
 
     while(1) {
-        for(auto &a : x) {
-            cout<<a<<" ";
+        for(int i = 0; i < n; i++) {
+            if(x[i]) {
+                cout<<i + 1<<" ";
+            }
         }
         cout<<endl;
 
@@ -32,3 +34,4 @@ int main() {
         }
     }
 }
+
